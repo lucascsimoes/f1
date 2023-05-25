@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "RedBull Racing",
+        "color": "#3671C6",
+        "drivers": ["Max Verstappen", "Sergio Perez"]
+    },
+    {
+        "id": 2,
+        "name": "Aston Martin",
+        "color": "#358C75",
+        "drivers": ["Fernando Alonso", "Lance Stroll"]
+    },
+    {
+        "id": 3,
+        "name": "Mercedes",
+        "color": "#6CD3BF",
+        "drivers": ["Lewis Hamilton", "George Russel"]
+    },
+    {
+        "id": 4,
+        "name": "Ferrari",
+        "color": "#F91536",
+        "drivers": ["Charles Leclerc", "Carlos Sainz"]
+    },
+    {
+        "id": 5,
+        "name": "McLaren",
+        "color": "#F58020",
+        "drivers": ["Lando Norris", "Oscar Piastri"]
+    },
+    {
+        "id": 6,
+        "name": "Alpine",
+        "color": "#3671C6",
+        "drivers": ["Pierre Gasly", "Esteban Ocon"]
+    },
+    {
+        "id": 7,
+        "name": "Haas F1 Team",
+        "color": "#B6BABD",
+        "drivers": ["Kevin Magnussen", "Nico Hulkenberg"]
+    },
+    {
+        "id": 8,
+        "name": "Alfa Romeo",
+        "color": "#C92D4B",
+        "drivers": ["Zhou Guanyu", "Valtteri Bottas"]
+    },
+    {
+        "id": 9,
+        "name": "Alpha Tauri",
+        "color": "#5E8FAA",
+        "drivers": ["Nick De Vries", "Yuki Tsunoda"]
+    },
+    {
+        "id": 10,
+        "name": "Williams",
+        "color": "#37BEDD",
+        "drivers": ["Alexander Albon", "Logan Sargeant"]
+    }
+]

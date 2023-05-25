@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Max Verstappen",
+        "team": "RedBull Racing",
+        "number": 1,
+        "country": "Holanda"
+    },
+    {
+        "id": 2,
+        "name": "Sergio Perez",
+        "team": "RedBull Racing",
+        "number": 11,
+        "country": "Mexico"
+    },
+    {
+        "id": 3,
+        "name": "Fernando Alonso",
+        "team": "Aston Martin",
+        "number": 14,
+        "country": "Espanha"
+    },
+    {
+        "id": 4,
+        "name": "Lance Stroll",
+        "team": "Aston Martin",
+        "number": 18,
+        "country": "Canada"
+    },
+    {
+        "id": 5,
+        "name": "Lewis Hamilton",
+        "team": "Mercedes",
+        "number": 44,
+        "country": "Reino Unido"
+    },
+    {
+        "id": 6,
+        "name": "George Russel",
+        "team": "Mercedes",
+        "number": 63,
+        "country": "Reino Unido"
+    },
+    {
+        "id": 7,
+        "name": "Carlos Sainz",
+        "team": "Ferrari",
+        "number": 55,
+        "country": "Espanha"
+    },
+    {
+        "id": 8,
+        "name": "Charles Leclerc",
+        "team": "Ferrari",
+        "number": 16,
+        "country": "Monaco"
+    },
+    {
+        "id": 9,
+        "name": "Lando Norris",
+        "team": "McLaren",
+        "number": 4,
+        "country": "Reino Unido"
+    },
+    {
+        "id": 10,
+        "name": "Oscar Piastri",
+        "team": "McLaren",
+        "number": 81,
+        "country": "Australia"
+    },
+    {
+        "id": 11,
+        "name": "Pierre Gasly",
+        "team": "Alpine",
+        "number": 10,
+        "country": "Franca"
+    },
+    {
+        "id": 12,
+        "name": "Esteban Ocon",
+        "team": "Alpine",
+        "number": 31,
+        "country": "Franca"
+    },
+    {
+        "id": 13,
+        "name": "Nico Hulkenberg",
+        "team": "Haas F1 Team",
+        "number": 27,
+        "country": "Alemanha"
+    },
+    {
+        "id": 14,
+        "name": "Kevin Magnussen",
+        "team": "Haas F1 Team",
+        "number": 20,
+        "country": "Dinamarca"
+    },
+    {
+        "id": 15,
+        "name": "Valtteri Bottas",
+        "team": "Alfa Romeo",
+        "number": 77,
+        "country": "Finlandia"
+    },
+    {
+        "id": 16,
+        "name": "Guanyu Zhou",
+        "team": "Alfa Romeo",
+        "number": 24,
+        "country": "China"
+    },
+    {
+        "id": 17,
+        "name": "Yuki Tsunoda",
+        "team": "Alpha Tauri",
+        "number": 22,
+        "country": "Japao"
+    },
+    {
+        "id": 18,
+        "name": "Nyck De Vries",
+        "team": "Alpha Tauri",
+        "number": 21,
+        "country": "Holanda"
+    },
+    {
+        "id": 19,
+        "name": "Alexander Albon",
+        "team": "Williams",
+        "number": 23,
+        "country": "Tailandia"
+    },
+    {
+        "id": 20,
+        "name": "Logan Sargeant",
+        "team": "Williams",
+        "number": 2,
+        "country": "Estados Unidos"
+    }
+]
