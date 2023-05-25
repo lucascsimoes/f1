@@ -15,32 +15,67 @@ export const Container = styled(Link) `
     transition: .35s;
 
     img {
+        position: relative;
         width: 650px;
+        z-index: 2;
+        transition: .35s;
     }
 
     & > div {
+        position: absolute;
+        left: 0;
+        top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        background: #222222a4;
+        padding: 20px;
+        background-image: linear-gradient(to top, #222222bc 20%, transparent 70%);
+        z-index: 3;
     }
 
-    & > h1 {
-        left: 60px;
-        bottom: 10px;
+    &:after {
+        content: '';
         position: absolute;
-        font-size: 150px;
-        -webkit-text-stroke: 1px ${props => props.color};
-        color: transparent;
-        font-family: 'Bull';
-        opacity: .3;
+        left: 0;
+        top: 50px;
+        width: 0;
+        height: 50px;
+        background: ${props => props.color};
+        overflow: hidden;
+        transition: .35s;
     }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 110px;
+        width: 0;
+        height: 15px;
+        background: ${props => props.color};
+        overflow: hidden;
+        transition: .35s .1s;
+    }
+
+    &:hover:after {
+        width: 100%;
+        transition: .35s;
+    }
+
+    &:hover:before {
+        width: 100%;
+        transition: .35s .15s;
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+        transition: .35s;
+    }
+
+
 
 
 
@@ -194,13 +229,45 @@ export const Right = styled.div `
 
 
 export const NameContainer = styled.div `
+    text-transform: uppercase;
     text-align: center;
+    position: relative;
     width: 100%;
-    padding: 70px;
+    
+    h2 {
+        position: relative;
+        font-family: 'Bull';
+        font-size: 50px;
+        letter-spacing: 2px;
+        line-height: 40px;
+        font-weight: normal;
+        z-index: 2;
+    }
 
     h1 {
-        text-transform: uppercase;
-        font-size: 34px;
-        letter-spacing: 2px;
+        position: relative;
+        font-family: 'Bull';
+        font-size: 70px;
+        -webkit-text-stroke: 1px white;
+        font-weight: normal;
+        color: transparent;
+        line-height: 60px;
+        z-index: 2;
+    }
+
+    h3 {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        font-family: 'Bull';
+        font-size: 200px;
+        z-index: 1;
+        color: ${props => props.color};
+        letter-spacing: 5px;
+        font-weight: normal;
+        opacity: .4;
     }
 `

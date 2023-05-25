@@ -46,11 +46,15 @@ export default ({ driver }) => {
 
             <div>
                 <NameContainer color={teamColor}>
-                    <h1> { formatName(driver.name)[0] } { formatName(driver.name)[1] } </h1>
+                    <h2> { formatName(driver.name)[0] } </h2>
+                    <h1> { formatName(driver.name)[1] } </h1>
+                    <h3> { driver.number } </h3>
                 </NameContainer>
             </div>
 
-            <h1> { driver.number } </h1>  
+            
+            {/* <h1> { driver.number } </h1>   */}
+
             {/* <Left color={teamColor}>
                 <header>
                     <div></div>
