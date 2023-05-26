@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Container, Left, Right, NameContainer } from './style'
+
+import { Container, Line, NameContainer } from './style'
 
 export default ({ driver }) => {
 
@@ -43,6 +44,19 @@ export default ({ driver }) => {
     return (
         <Container color={teamColor} to={`/pilotos/${driverPathName}`}>
             <img src={driverPhoto}/>
+
+            <Line color={teamColor}>
+                <div>
+                {['', '', '', ''].map((_, key) => (
+                    <>
+                    <span> ● </span>
+                    <h1> { formatName(driver.name)[1] } </h1>
+                    <h2> { driver.number } </h2>  
+                    </>
+                ))}
+                </div>
+                
+            </Line>
 
             <div>
                 <NameContainer color={teamColor}>

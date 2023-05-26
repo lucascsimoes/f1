@@ -8,7 +8,6 @@ import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 export default (props) => {
 
     const [drivers, setDrivers] = useState([])
-
     useEffect(() => {
         fetch('data/drivers.json')
             .then(r => r.json())
@@ -26,7 +25,9 @@ export default (props) => {
 
         <PilotDisplay>
             {drivers.map(driver => {
-                return <PilotCard key={driver.id} driver={driver}/>
+                return (
+                    <PilotCard key={driver.id} driver={driver}/>
+                ) 
             })}
         </PilotDisplay>
         </>

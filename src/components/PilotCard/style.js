@@ -18,10 +18,9 @@ export const Container = styled(Link) `
         position: relative;
         width: 650px;
         z-index: 2;
-        transition: .35s;
     }
 
-    & > div {
+    & > div:not(img + div) {
         position: absolute;
         left: 0;
         top: 0;
@@ -36,18 +35,6 @@ export const Container = styled(Link) `
         z-index: 3;
     }
 
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50px;
-        width: 0;
-        height: 50px;
-        background: ${props => props.color};
-        overflow: hidden;
-        transition: .35s;
-    }
-
     &:before {
         content: '';
         position: absolute;
@@ -60,7 +47,7 @@ export const Container = styled(Link) `
         transition: .35s .1s;
     }
 
-    &:hover:after {
+    &:hover img + div {
         width: 100%;
         transition: .35s;
     }
@@ -269,5 +256,54 @@ export const NameContainer = styled.div `
         letter-spacing: 5px;
         font-weight: normal;
         opacity: .4;
+    }
+`
+
+export const Line = styled.div `
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 0;
+    height: 50px;
+    background: ${props => props.color};
+    overflow: hidden;
+    transition: .35s;
+
+    & > div {
+        display: flex;
+        align-items: center;
+        transform: translateX(-120px);
+        
+        h1 {
+            font-weight: normal;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-size: 48px;
+            letter-spacing: 2px;
+            font-family: 'Bull';
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+            opacity: .7;
+        }
+
+        span {
+            font-size: 40px;
+            font-family: 'Bull';
+            line-height: 50px;
+            letter-spacing: 2px;
+            opacity: .3;
+            margin-inline: 5px;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 48px;
+            letter-spacing: 2px;
+            font-family: 'Bull';
+            line-height: 50px;
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+            opacity: .7;
+        }
     }
 `
