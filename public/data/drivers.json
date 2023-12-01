@@ -8,7 +8,9 @@
             "color": "#3671c6"
         },
         "country": "Holanda",
-        "points": 575
+        "points": 575,
+        "wins": 19,
+        "pole": 12
     },
     {
         "id": 11,
@@ -19,7 +21,9 @@
             "color": "#3671c6"
         },
         "country": "Mexico",
-        "points": 285
+        "points": 285,
+        "wins": 2,
+        "pole": 2
     },
     {
         "id": 44,
@@ -30,7 +34,9 @@
             "color": "#6cd3bf"
         },
         "country": "Reino Unido",
-        "points": 234
+        "points": 234,
+        "wins": 0,
+        "pole": 1
     },
     {
         "id": 14,
@@ -41,7 +47,9 @@
             "color": "#358c75"
         },
         "country": "Espanha",
-        "points": 206
+        "points": 206,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 16,
@@ -52,7 +60,9 @@
             "color": "#f91536"
         },
         "country": "Monaco",
-        "points": 206
+        "points": 206,
+        "wins": 0,
+        "pole": 5
     },
     {
         "id": 4,
@@ -63,7 +73,9 @@
             "color": "#f58020"
         },
         "country": "Reino Unido",
-        "points": 205
+        "points": 205,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 55,
@@ -74,7 +86,9 @@
             "color": "#f91536"
         },
         "country": "Espanha",
-        "points": 200
+        "points": 200,
+        "wins": 1,
+        "pole": 2
     },
     {
         "id": 63,
@@ -85,7 +99,9 @@
             "color": "#6cd3bf"
         },
         "country": "Reino Unido",
-        "points": 175
+        "points": 175,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 81,
@@ -96,7 +112,9 @@
             "color": "#f58020"
         },
         "country": "Australia",
-        "points": 97
+        "points": 97,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 18,
@@ -107,7 +125,9 @@
             "color": "#358c75"
         },
         "country": "Canada",
-        "points": 74
+        "points": 74,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 10,
@@ -118,7 +138,9 @@
             "color": "#2293d1"
         },
         "country": "Franca",
-        "points": 62
+        "points": 62,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 31,
@@ -129,7 +151,9 @@
             "color": "#2293d1"
         },
         "country": "Franca",
-        "points": 58
+        "points": 58,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 23,
@@ -140,7 +164,9 @@
             "color": "#37bedd"
         },
         "country": "Tailandia",
-        "points": 27
+        "points": 27,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 22,
@@ -151,7 +177,9 @@
             "color": "#5e8faa"
         },
         "country": "Japao",
-        "points": 17
+        "points": 17,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 77,
@@ -162,7 +190,9 @@
             "color": "#c92d4b"
         },
         "country": "Finlandia",
-        "points": 10
+        "points": 10,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 27,
@@ -173,7 +203,9 @@
             "color": "#b6babd"
         },
         "country": "Alemanha",
-        "points": 9
+        "points": 9,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 3,
@@ -184,7 +216,9 @@
             "color": "#5e8faa"
         },
         "country": "Australia",
-        "points": 6
+        "points": 6,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 24,
@@ -195,7 +229,9 @@
             "color": "#c92d4b"
         },
         "country": "China",
-        "points": 6
+        "points": 6,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 20,
@@ -206,7 +242,9 @@
             "color": "#b6babd"
         },
         "country": "Dinamarca",
-        "points": 3
+        "points": 3,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 40,
@@ -217,7 +255,9 @@
             "color": "#5e8faa"
         },
         "country": "Australia",
-        "points": 2
+        "points": 2,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 2,
@@ -228,7 +268,9 @@
             "color": "#37bedd"
         },
         "country": "Estados Unidos",
-        "points": 1
+        "points": 1,
+        "wins": 0,
+        "pole": 0
     },
     {
         "id": 21,
@@ -239,6 +281,8 @@
             "color": "#5e8faa"
         },
         "country": "Holanda",
-        "points": 0
+        "points": 0,
+        "wins": 0,
+        "pole": 0
     }
 ]

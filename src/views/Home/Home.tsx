@@ -2,6 +2,7 @@ import * as Styled from './style'
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import moment from 'moment'
+import 'animate.css';
 
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
@@ -19,6 +20,8 @@ interface DriverProps {
     }
     country: string
     points: number
+    wins: number
+    pole: number
 }
 
 interface RaceResult {
@@ -220,9 +223,17 @@ export default () => {
                 return item.name == value
             })
 
-            console.log(selected)
-            
-            setDriverSelect(selected)
+            if (selected != driverSelect) {
+                const element = document.querySelector(".animate__animated")
+                element?.classList.remove("animate__fadeInRight")
+                element?.classList.add("animate__fadeOutLeft")
+
+                element?.addEventListener('animationend', () => {
+                    setDriverSelect(selected)
+                    element?.classList.add("animate__fadeInRight")
+                    element?.classList.remove("animate__fadeOutLeft")
+                });
+            }
         }
     }
 
@@ -234,7 +245,13 @@ export default () => {
           return objetoComMaiorPontuacao
     }
 
-    
+    useEffect(() => {
+        changeAnimation()
+    }, [driverSelect])
+
+    function changeAnimation() {
+        console.log("a")
+    }
 
     
 
@@ -275,13 +292,34 @@ export default () => {
                     </Styled.NextEvent>
 
                     <Styled.Main>
-                        <Styled.DriverSelected>
+                        <div>
                             { driverSelect == undefined ?
                                 <p> Aguarde... </p>    
                                 :
-                                <h1> { driverSelect.name } </h1>
+                                <Styled.DriverSelected color={driverSelect.team.color}>
+                                    <main className='animate__animated animate__fadeInRight'>
+                                        <div className='img-container'>
+                                            <img src={require(`../../assets/images/drivers/${driverSelect.name}.webp`)} />
+                                        </div>
+                                        <aside>
+                                            <h1> { driverSelect.name.split(" ")[0] } <span> { driverSelect.name.replace(driverSelect.name.split(" ")[0], "").trim() } </span> </h1>
+
+                                            <div>
+                                                <p> { driverSelect.team.name } </p>
+                                                <div>
+                                                    <img src={require(`../../assets/images/country/${driverSelect.country}.avif`)} />
+                                                    <p> { driverSelect.country } </p>
+                                                </div>
+                                            </div>
+
+                                            <p> { driverSelect.points } <span>pontos</span> </p>
+                                            <p> { driverSelect.wins } <span>vitórias</span> </p>
+                                            <p> { driverSelect.pole } <span>poles</span> </p>
+                                        </aside>
+                                    </main>
+                                </Styled.DriverSelected>
                             }
-                        </Styled.DriverSelected>
+                        </div>
                         <Styled.DriverStandings>
                             <h3> Classificação dos pilotos </h3>
 

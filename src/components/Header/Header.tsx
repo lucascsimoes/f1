@@ -78,17 +78,10 @@ export default () => {
                                                 const firstName = item.name.split(" ")[0]
                                                 const lastName = item.name.replace(firstName, "").trim()
 
-                                                let imageSrc: string;
-                                                try {
-                                                    imageSrc = require(`../../assets/images/drivers/${item.name}.webp`)
-                                                } catch {
-                                                    imageSrc = require("../../assets/images/drivers/Not Found.webp")
-                                                }
-
                                                 return (
                                                     <Styled.Navigation key={key} orientation={"horizontal"} color={item.team.color} to={`/drivers/${item.abbreviation}`}>
                                                         <div>
-                                                            <img src={imageSrc} alt={item.name} />
+                                                            <img src={require(`../../assets/images/drivers/${item.name}.webp`)} alt={item.name} />
                                                         </div>
                                                         <p> { firstName } <span> { lastName } </span> </p> 
                                                     </Styled.Navigation>
