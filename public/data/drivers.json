@@ -1,0 +1,244 @@
+[
+    {
+        "id": 1,
+        "name": "Max Verstappen",
+        "abbreviation": "VER",
+        "team": {
+            "name": "RedBull Racing",
+            "color": "#3671c6"
+        },
+        "country": "Holanda",
+        "points": 575
+    },
+    {
+        "id": 11,
+        "name": "Sergio Perez",
+        "abbreviation": "PER",
+        "team": {
+            "name": "RedBull Racing",
+            "color": "#3671c6"
+        },
+        "country": "Mexico",
+        "points": 285
+    },
+    {
+        "id": 44,
+        "name": "Lewis Hamilton",
+        "abbreviation": "HAM",
+        "team": {
+            "name": "Mercedes",
+            "color": "#6cd3bf"
+        },
+        "country": "Reino Unido",
+        "points": 234
+    },
+    {
+        "id": 14,
+        "name": "Fernando Alonso",
+        "abbreviation": "ALO",
+        "team": {
+            "name": "Aston Martin",
+            "color": "#358c75"
+        },
+        "country": "Espanha",
+        "points": 206
+    },
+    {
+        "id": 16,
+        "name": "Charles Leclerc",
+        "abbreviation": "LEC",
+        "team": {
+            "name": "Ferrari",
+            "color": "#f91536"
+        },
+        "country": "Monaco",
+        "points": 206
+    },
+    {
+        "id": 4,
+        "name": "Lando Norris",
+        "abbreviation": "NOR",
+        "team": {
+            "name": "McLaren",
+            "color": "#f58020"
+        },
+        "country": "Reino Unido",
+        "points": 205
+    },
+    {
+        "id": 55,
+        "name": "Carlos Sainz",
+        "abbreviation": "SAI",
+        "team": {
+            "name": "Ferrari",
+            "color": "#f91536"
+        },
+        "country": "Espanha",
+        "points": 200
+    },
+    {
+        "id": 63,
+        "name": "George Russel",
+        "abbreviation": "RUS",
+        "team": {
+            "name": "Mercedes",
+            "color": "#6cd3bf"
+        },
+        "country": "Reino Unido",
+        "points": 175
+    },
+    {
+        "id": 81,
+        "name": "Oscar Piastri",
+        "abbreviation": "PIA",
+        "team": {
+            "name": "McLaren",
+            "color": "#f58020"
+        },
+        "country": "Australia",
+        "points": 97
+    },
+    {
+        "id": 18,
+        "name": "Lance Stroll",
+        "abbreviation": "STR",
+        "team": {
+            "name": "Aston Martin",
+            "color": "#358c75"
+        },
+        "country": "Canada",
+        "points": 74
+    },
+    {
+        "id": 10,
+        "name": "Pierre Gasly",
+        "abbreviation": "GAS",
+        "team": {
+            "name": "Alpine",
+            "color": "#2293d1"
+        },
+        "country": "Franca",
+        "points": 62
+    },
+    {
+        "id": 31,
+        "name": "Esteban Ocon",
+        "abbreviation": "OCO",
+        "team": {
+            "name": "Alpine",
+            "color": "#2293d1"
+        },
+        "country": "Franca",
+        "points": 58
+    },
+    {
+        "id": 23,
+        "name": "Alexander Albon",
+        "abbreviation": "ALB",
+        "team": {
+            "name": "Williams",
+            "color": "#37bedd"
+        },
+        "country": "Tailandia",
+        "points": 27
+    },
+    {
+        "id": 22,
+        "name": "Yuki Tsunoda",
+        "abbreviation": "TSU",
+        "team": {
+            "name": "AlphaTauri",
+            "color": "#5e8faa"
+        },
+        "country": "Japao",
+        "points": 17
+    },
+    {
+        "id": 77,
+        "name": "Valtteri Bottas",
+        "abbreviation": "BOT",
+        "team": {
+            "name": "Alfa Romeo",
+            "color": "#c92d4b"
+        },
+        "country": "Finlandia",
+        "points": 10
+    },
+    {
+        "id": 27,
+        "name": "Nico Hulkenberg",
+        "abbreviation": "HUL",
+        "team": {
+            "name": "Haas F1 Team",
+            "color": "#b6babd"
+        },
+        "country": "Alemanha",
+        "points": 9
+    },
+    {
+        "id": 3,
+        "name": "Daniel Riccardo",
+        "abbreviation": "RIC",
+        "team": {
+            "name": "AlphaTauri",
+            "color": "#5e8faa"
+        },
+        "country": "Australia",
+        "points": 6
+    },
+    {
+        "id": 24,
+        "name": "Guanyu Zhou",
+        "abbreviation": "ZHO",
+        "team": {
+            "name": "Alfa Romeo",
+            "color": "#c92d4b"
+        },
+        "country": "China",
+        "points": 6
+    },
+    {
+        "id": 20,
+        "name": "Kevin Magnussen",
+        "abbreviation": "MAG",
+        "team": {
+            "name": "Haas F1 Team",
+            "color": "#b6babd"
+        },
+        "country": "Dinamarca",
+        "points": 3
+    },
+    {
+        "id": 40,
+        "name": "Liam Lawson",
+        "abbreviation": "LAW",
+        "team": {
+            "name": "AlphaTauri",
+            "color": "#5e8faa"
+        },
+        "country": "Australia",
+        "points": 2
+    },
+    {
+        "id": 2,
+        "name": "Logan Sargeant",
+        "abbreviation": "SAR",
+        "team": {
+            "name": "Williams",
+            "color": "#37bedd"
+        },
+        "country": "Estados Unidos",
+        "points": 1
+    },
+    {
+        "id": 21,
+        "name": "Nyck De Vries",
+        "abbreviation": "DEV",
+        "team": {
+            "name": "AlphaTauri",
+            "color": "#5e8faa"
+        },
+        "country": "Holanda",
+        "points": 0
+    }
+]
