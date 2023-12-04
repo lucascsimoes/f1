@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// import bg from 
+const bg = require('../../assets/images/bg.webp')
 
 export const NextEvent = styled.div `
     position: relative;
@@ -126,13 +128,26 @@ export const NextEvent = styled.div `
     }
 `
 
+
+
 export const Main = styled.main `
     display: flex;
+    flex-wrap: wrap;
     margin-top: 80px;
     gap: 40px;
+    user-select: none;
+    margin-bottom: 1000px;
 
     & > * {
         flex: 1;
+    }
+
+    & > div:first-child {
+        display: flex;
+        position: relative;
+        background-image: url(${bg});
+        background-repeat: repeat;
+        background-size: 8px;
     }
 `
 
@@ -141,11 +156,23 @@ interface DriverSelectProps {
 }
 
 export const DriverSelected = styled.div<DriverSelectProps> `
+    display: flex;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    width: 100%;
     overflow: hidden;
+    background-color: var(--background);
+    padding-block: 20px;
+
+    & > * {
+        z-index: 1;
+    }
 
     main {
         display: flex;
         position: relative;
+        width: 100%;
 
         &.animate__animated.animate__fadeInRight,
         &.animate__animated.animate__fadeOutLeft {
@@ -162,18 +189,12 @@ export const DriverSelected = styled.div<DriverSelectProps> `
             background: ${({ color }) => `linear-gradient(to right, transparent, ${color}, transparent)`};
         }
 
-        @keyframes blur {
-            0% {
-                filter: blur(10px);
-            }
-
-            100% {
-                filter: blur(0px);
-            }
-        }
-
         & > aside {
             margin-top: 35px;
+
+            & > :last-child {
+                margin-top: 20px;
+            }
 
             & > div {
                 margin-block: 20px;
@@ -244,15 +265,20 @@ export const DriverSelected = styled.div<DriverSelectProps> `
         img {
             position: relative;
             z-index: 1;
-            max-width: 350px;
+            max-width: 400px;
             width: 100%;
         }
     }
 `
 
 export const DriverStandings = styled.div `
+
     h3 {
         text-align: right;
         margin-bottom: 20px;
     }
+`
+
+export const Teste = styled.div `
+    width: 100%;
 `

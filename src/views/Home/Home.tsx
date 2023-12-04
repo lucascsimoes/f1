@@ -224,15 +224,16 @@ export default () => {
             })
 
             if (selected != driverSelect) {
-                const element = document.querySelector(".animate__animated")
-                element?.classList.remove("animate__fadeInRight")
-                element?.classList.add("animate__fadeOutLeft")
+                setDriverSelect(selected)
+                // const element = document.querySelector(".animate__animated")
+                // element?.classList.remove("animate__fadeInRight")
+                // element?.classList.add("animate__fadeOutLeft")
 
-                element?.addEventListener('animationend', () => {
-                    setDriverSelect(selected)
-                    element?.classList.add("animate__fadeInRight")
-                    element?.classList.remove("animate__fadeOutLeft")
-                });
+                // element?.addEventListener('animationend', () => {
+                //     setDriverSelect(selected)
+                //     element?.classList.add("animate__fadeInRight")
+                //     element?.classList.remove("animate__fadeOutLeft")
+                // });
             }
         }
     }
@@ -250,7 +251,7 @@ export default () => {
     }, [driverSelect])
 
     function changeAnimation() {
-        console.log("a")
+        return allDrivers
     }
 
     
@@ -296,28 +297,32 @@ export default () => {
                             { driverSelect == undefined ?
                                 <p> Aguarde... </p>    
                                 :
-                                <Styled.DriverSelected color={driverSelect.team.color}>
-                                    <main className='animate__animated animate__fadeInRight'>
-                                        <div className='img-container'>
-                                            <img src={require(`../../assets/images/drivers/${driverSelect.name}.webp`)} />
-                                        </div>
-                                        <aside>
-                                            <h1> { driverSelect.name.split(" ")[0] } <span> { driverSelect.name.replace(driverSelect.name.split(" ")[0], "").trim() } </span> </h1>
-
-                                            <div>
-                                                <p> { driverSelect.team.name } </p>
-                                                <div>
-                                                    <img src={require(`../../assets/images/country/${driverSelect.country}.avif`)} />
-                                                    <p> { driverSelect.country } </p>
-                                                </div>
+                                <Styled.Teste>
+                                    <Styled.DriverSelected color={driverSelect.team.color}>
+                                        <main>
+                                            <div className='img-container'>
+                                                <img src={require(`../../assets/images/drivers/${driverSelect.name}.webp`)} />
                                             </div>
+                                            <aside>
+                                                <h1> { driverSelect.name.split(" ")[0] } <span> { driverSelect.name.replace(driverSelect.name.split(" ")[0], "").trim() } </span> </h1>
 
-                                            <p> { driverSelect.points } <span>pontos</span> </p>
-                                            <p> { driverSelect.wins } <span>vitórias</span> </p>
-                                            <p> { driverSelect.pole } <span>poles</span> </p>
-                                        </aside>
-                                    </main>
-                                </Styled.DriverSelected>
+                                                <div>
+                                                    <p> { driverSelect.team.name } </p>
+                                                    <div>
+                                                        <img src={require(`../../assets/images/country/${driverSelect.country}.avif`)} />
+                                                        <p> { driverSelect.country } </p>
+                                                    </div>
+                                                </div>
+
+                                                <p> { driverSelect.points } <span>pontos</span> </p>
+                                                <p> { driverSelect.wins } <span>vitórias</span> </p>
+                                                <p> { driverSelect.pole } <span>poles</span> </p>
+
+                                                <Button path={`/drivers/${driverSelect.abbreviation}`}> VER MAIS </Button>
+                                            </aside>
+                                        </main>
+                                    </Styled.DriverSelected>
+                                </Styled.Teste>
                             }
                         </div>
                         <Styled.DriverStandings>
